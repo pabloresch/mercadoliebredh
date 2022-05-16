@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login" method="get" name="register">
+        <label for="name"> Nombre y apellido
+            <input  type="text" name="name" id="name" placeholder="Ejm. Jose" maxlength="15" required/>
+        </label>
+        <label for="username"> Nombre de Usuario
+            <input type="email" name="username" id="username" placeholder="Ingrese su Usuario" pattern=""/>
+       </label>
+        <label for="create_at"> Fecha de nacimiento
+            <input type="date" name="create_at" id="create_at"/>
+        </label>
+        <label for="address"> Domicilio
+            <input type="text" name="address" id="address" placeholder="Ingrese su Domicilio"/>
+       </label>
+        <label for="perfil"> Perfil 
+            <input type="radio" name="perfil" value="comprador" id="perfil"/> Comprador
+            <input type="radio" name="perfil" value="vendedor" id="perfil"/> Vendedor
+        </label>
+        <label for="category"> Categoria 
+            <input type="checkbox" name="category" value="electro" id="category"/> Electro
+            <input type="checkbox" name="category" value="moda" id="category"/> Moda
+            <input type="checkbox" name="category" value="hogar" id="category"/> Hogar
+            <input type="checkbox" name="category" value="jugueteria" id="category"/> Juegueteria
+            <input type="checkbox" name="category" value="vida sana" id="category"/> Vida Sana
+        </label>
+        <label for="imaguser">
+            <input type="file" name="imaguser" accept="image/* "id="imaguser"/>
+        </label>
+        <label for="password"> Contrasena
+            <input type="password" name="password" id="password" placeholder="Contrasena" pattern=""/>
+        </label>
+        <label for="passwordConf"> Validar Contrasena
+            <input type="password" name="passwordConf" id="passwordConf" placeholder="Contrasena" pattern=""/>
+        </label>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset" form="register">
+    </form>
+</body>
+</html>
